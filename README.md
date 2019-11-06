@@ -1,2 +1,2 @@
 # wizytowka
-Wizytowka {CodersCamp task)
+Wizytowka (CodersCamp task)
