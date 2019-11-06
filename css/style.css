@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+main {
+    height: 100vh;
+    background-color: lightgray;
+    overflow: auto;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+header {
+    height: 100vh;
+    background-color:rgb(139, 226, 255);
+    position: relative;
+    overflow-x: hidden;
+    color: whitesmoke;
+}
+header nav {
+    position: absolute;
+    right: 5%;
+    top: 3%;
+    font-size: 3rem;
+}
+header hgroup {
+    position: absolute;
+    top: 8%;
+    left: 10%;
+    font-family: 'McLaren', cursive;
+    z-index:9;
+}
+
+/* KLASY */
+
+.mainimg {
+    position: absolute;
+    height: 68vh;
+    bottom: 0;
+    right: 0;
+}
+
+.mr {
+    font-size: 4rem;
+    font-weight: 700;
+}
+.motto {
+    font-size: 2rem;
+   
+}
+.arrow {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid white;
+    bottom: 7.5%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-size: 6rem;
+    text-align: center;
+    text-shadow: 0px -15px 0 white;
+    overflow: hidden;
+    
+}
+
+.about {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.mine {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.row{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.works {
+    padding: 10px;
+    width: 70%;
+    height: 20%;
+}
+
+.img {
+    width: 100%;
+
+}
+
+.arrow:hover {
+     background-color: gray;
+     -webkit-transition: 0.7s ease;
+     transition: 0.7s ease;
+     cursor: pointer;
+}
+
+.fa.fa-angle-down {
+    -webkit-animation: arrow 1.3s infinite linear;
+    animation: arrow 1.3s infinite linear;
+}
+
+/* MEDIA QUERIES RWD */
+
+@media (orientation: landscape) {
+    .row {
+        display: inline-block;
+    }
+    .works {
+        float: left;
+        padding: 10px;
+        width: 33.33%;
+    }
+}
+
+@media (orientation: portrait) {
+    main {
+        height: 100%;
+    }
+}
+
+@media (min-width:576px){}
+
+@media (min-width:768px){
+    .mr {
+        font-size: 5rem;
+    }
+    .motto {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width:1024px){
+    .mr {
+        font-size: 6.5rem;
+    }
+    .motto {
+        font-size: 4.5rem;
+    }
+    .about {
+        font-size: 2.5rem;
+    }
+    .mine {
+        font-size: 4rem;
+    }
+}
+
+@media (min-width:1280px){
+    .mr {
+        font-size: 8rem;
+    }
+    .motto {
+        font-size: 6rem;
+    }
+    .about {
+        font-size: 3rem;
+        margin-bottom: 40px;
+    }
+    .mine {
+        font-size: 5rem;
+    }
+}
+
+@media (min-width:1600px){
+    .mr {
+        font-size: 10rem;
+    }
+    .motto {
+        font-size: 8rem;
+    }
+    .about {
+        font-size: 4.5rem;
+        margin-bottom: 95px;
+    }
+    .mine {
+        font-size: 6rem;
+    }
+}
+
+/* ANIMACJA */
+
+@-webkit-keyframes arrow {
+    0% {-webkit-transform: translateY(-40px);transform: translateY(-40px)}
+    50% {-webkit-transform: translateY(0px);transform: translateY(0px)}
+    100% {-webkit-transform: translateY(40px);transform: translateY(40px)}
+}
+
+@keyframes arrow {
+    0% {-webkit-transform: translateY(-40px);transform: translateY(-40px)}
+    50% {-webkit-transform: translateY(0px);transform: translateY(0px)}
+    100% {-webkit-transform: translateY(40px);transform: translateY(40px)}
+}
